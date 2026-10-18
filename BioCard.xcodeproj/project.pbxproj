@@ -24,20 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		200000000000000100000001 /* BioCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardApp/BioCardApp.swift"; sourceTree = "<group>"; };
-		200000000000000200000001 /* APDUParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Engine/APDUParser.swift"; sourceTree = "<group>"; };
-		200000000000000300000001 /* DirectTransceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Engine/DirectTransceiver.swift"; sourceTree = "<group>"; };
-		200000000000000400000001 /* HistoricalLogReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Engine/HistoricalLogReader.swift"; sourceTree = "<group>"; };
-		200000000000000500000001 /* LogFileImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Engine/LogFileImporter.swift"; sourceTree = "<group>"; };
-		200000000000000600000001 /* PrivateLogStreamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Engine/PrivateLogStreamer.swift"; sourceTree = "<group>"; };
-		200000000000000700000001 /* APDUPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Models/APDUPacket.swift"; sourceTree = "<group>"; };
-		200000000000000800000001 /* TraceEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Models/TraceEntry.swift"; sourceTree = "<group>"; };
-		200000000000000900000001 /* TextExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Storage/TextExporter.swift"; sourceTree = "<group>"; };
-		200000000000000A00000001 /* TraceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardCore/Storage/TraceStore.swift"; sourceTree = "<group>"; };
-		200000000000000B00000001 /* APDURowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardUI/Views/APDURowView.swift"; sourceTree = "<group>"; };
-		200000000000000C00000001 /* ExportShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardUI/Views/ExportShareView.swift"; sourceTree = "<group>"; };
-		200000000000000D00000001 /* MainConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardUI/Views/MainConsoleView.swift"; sourceTree = "<group>"; };
-		200000000000000E00000001 /* PacketDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/BioCardUI/Views/PacketDetailSheet.swift"; sourceTree = "<group>"; };
+		200000000000000100000001 /* BioCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCardApp.swift; sourceTree = "<group>"; };
+		200000000000000200000001 /* APDUParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUParser.swift; sourceTree = "<group>"; };
+		200000000000000300000001 /* DirectTransceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectTransceiver.swift; sourceTree = "<group>"; };
+		200000000000000400000001 /* HistoricalLogReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalLogReader.swift; sourceTree = "<group>"; };
+		200000000000000500000001 /* LogFileImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFileImporter.swift; sourceTree = "<group>"; };
+		200000000000000600000001 /* PrivateLogStreamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateLogStreamer.swift; sourceTree = "<group>"; };
+		200000000000000700000001 /* APDUPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUPacket.swift; sourceTree = "<group>"; };
+		200000000000000800000001 /* TraceEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceEntry.swift; sourceTree = "<group>"; };
+		200000000000000900000001 /* TextExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExporter.swift; sourceTree = "<group>"; };
+		200000000000000A00000001 /* TraceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStore.swift; sourceTree = "<group>"; };
+		200000000000000B00000001 /* APDURowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDURowView.swift; sourceTree = "<group>"; };
+		200000000000000C00000001 /* ExportShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportShareView.swift; sourceTree = "<group>"; };
+		200000000000000D00000001 /* MainConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConsoleView.swift; sourceTree = "<group>"; };
+		200000000000000E00000001 /* PacketDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDetailSheet.swift; sourceTree = "<group>"; };
 		300000000000000100000001 /* BioCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,20 +55,7 @@
 		500000000000000100000001 = {
 			isa = PBXGroup;
 			children = (
-				200000000000000100000001 /* BioCardApp.swift */,
-				200000000000000200000001 /* APDUParser.swift */,
-				200000000000000300000001 /* DirectTransceiver.swift */,
-				200000000000000400000001 /* HistoricalLogReader.swift */,
-				200000000000000500000001 /* LogFileImporter.swift */,
-				200000000000000600000001 /* PrivateLogStreamer.swift */,
-				200000000000000700000001 /* APDUPacket.swift */,
-				200000000000000800000001 /* TraceEntry.swift */,
-				200000000000000900000001 /* TextExporter.swift */,
-				200000000000000A00000001 /* TraceStore.swift */,
-				200000000000000B00000001 /* APDURowView.swift */,
-				200000000000000C00000001 /* ExportShareView.swift */,
-				200000000000000D00000001 /* MainConsoleView.swift */,
-				200000000000000E00000001 /* PacketDetailSheet.swift */,
+				500000000000000300000001 /* Sources */,
 				500000000000000200000001 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +66,83 @@
 				300000000000000100000001 /* BioCard.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		500000000000000300000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000400000001 /* BioCardApp */,
+				500000000000000500000001 /* BioCardCore */,
+				500000000000000900000001 /* BioCardUI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		500000000000000400000001 /* BioCardApp */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000100000001 /* BioCardApp.swift */,
+			);
+			path = BioCardApp;
+			sourceTree = "<group>";
+		};
+		500000000000000500000001 /* BioCardCore */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000600000001 /* Engine */,
+				500000000000000700000001 /* Models */,
+				500000000000000800000001 /* Storage */,
+			);
+			path = BioCardCore;
+			sourceTree = "<group>";
+		};
+		500000000000000600000001 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000200000001 /* APDUParser.swift */,
+				200000000000000300000001 /* DirectTransceiver.swift */,
+				200000000000000400000001 /* HistoricalLogReader.swift */,
+				200000000000000500000001 /* LogFileImporter.swift */,
+				200000000000000600000001 /* PrivateLogStreamer.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		500000000000000700000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000700000001 /* APDUPacket.swift */,
+				200000000000000800000001 /* TraceEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		500000000000000800000001 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000900000001 /* TextExporter.swift */,
+				200000000000000A00000001 /* TraceStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		500000000000000900000001 /* BioCardUI */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000A00000001 /* Views */,
+			);
+			path = BioCardUI;
+			sourceTree = "<group>";
+		};
+		500000000000000A00000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000B00000001 /* APDURowView.swift */,
+				200000000000000C00000001 /* ExportShareView.swift */,
+				200000000000000D00000001 /* MainConsoleView.swift */,
+				200000000000000E00000001 /* PacketDetailSheet.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

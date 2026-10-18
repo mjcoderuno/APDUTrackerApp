@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		/* App Sources */
 		100000000000000100000001 /* BioCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000100000001 /* BioCardApp.swift */; };
 		100000000000000200000001 /* APDUParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000200000001 /* APDUParser.swift */; };
 		100000000000000300000001 /* DirectTransceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000300000001 /* DirectTransceiver.swift */; };
@@ -21,7 +22,32 @@
 		100000000000000C00000001 /* ExportShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000C00000001 /* ExportShareView.swift */; };
 		100000000000000D00000001 /* MainConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000D00000001 /* MainConsoleView.swift */; };
 		100000000000000E00000001 /* PacketDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000E00000001 /* PacketDetailSheet.swift */; };
+		100000000000000F00000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000F00000001 /* Assets.xcassets */; };
+		/* BioCardAppTests Sources */
+		110000000000000100000001 /* BioCardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000100000001 /* BioCardAppTests.swift */; };
+		110000000000000200000001 /* BioCardCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000200000001 /* BioCardCoreTests.swift */; };
+		/* BioCardAppTests host app */
+		110000000000000300000001 /* BioCard.app in Frameworks */ = {isa = PBXBuildFile; fileRef = 300000000000000100000001 /* BioCard.app */; };
+		/* BioCardAppUITests Sources */
+		120000000000000100000001 /* BioCardAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220000000000000100000001 /* BioCardAppUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10000000000000100000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900000000000000100000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600000000000000100000001;
+			remoteInfo = BioCard;
+		};
+		D10000000000000200000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900000000000000100000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600000000000000100000001;
+			remoteInfo = BioCard;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		200000000000000100000001 /* BioCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCardApp.swift; sourceTree = "<group>"; };
@@ -38,11 +64,32 @@
 		200000000000000C00000001 /* ExportShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportShareView.swift; sourceTree = "<group>"; };
 		200000000000000D00000001 /* MainConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConsoleView.swift; sourceTree = "<group>"; };
 		200000000000000E00000001 /* PacketDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDetailSheet.swift; sourceTree = "<group>"; };
+		200000000000000F00000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		300000000000000100000001 /* BioCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		/* Test file references */
+		210000000000000100000001 /* BioCardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCardAppTests.swift; sourceTree = "<group>"; };
+		210000000000000200000001 /* BioCardCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCardCoreTests.swift; sourceTree = "<group>"; };
+		310000000000000100000001 /* BioCardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioCardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220000000000000100000001 /* BioCardAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCardAppUITests.swift; sourceTree = "<group>"; };
+		320000000000000100000001 /* BioCardAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioCardAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		400000000000000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410000000000000100000001 /* Frameworks (BioCardAppTests) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420000000000000100000001 /* Frameworks (BioCardAppUITests) */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				500000000000000300000001 /* Sources */,
+				E00000000000000100000001 /* Tests */,
 				500000000000000200000001 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				300000000000000100000001 /* BioCard.app */,
+				310000000000000100000001 /* BioCardAppTests.xctest */,
+				320000000000000100000001 /* BioCardAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				200000000000000100000001 /* BioCardApp.swift */,
+				200000000000000F00000001 /* Assets.xcassets */,
 			);
 			path = BioCardApp;
 			sourceTree = "<group>";
@@ -145,6 +196,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E00000000000000100000001 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E00000000000000200000001 /* BioCardAppTests */,
+				E00000000000000300000001 /* BioCardAppUITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E00000000000000200000001 /* BioCardAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				210000000000000100000001 /* BioCardAppTests.swift */,
+				210000000000000200000001 /* BioCardCoreTests.swift */,
+			);
+			path = BioCardAppTests;
+			sourceTree = "<group>";
+		};
+		E00000000000000300000001 /* BioCardAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				220000000000000100000001 /* BioCardAppUITests.swift */,
+			);
+			path = BioCardAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +231,7 @@
 			buildPhases = (
 				800000000000000100000001 /* Sources */,
 				400000000000000100000001 /* Frameworks */,
+				900000000000000200000001 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +241,40 @@
 			productName = BioCard;
 			productReference = 300000000000000100000001 /* BioCard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		610000000000000100000001 /* BioCardAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710000000000000100000001 /* Build configuration list for PBXNativeTarget "BioCardAppTests" */;
+			buildPhases = (
+				810000000000000100000001 /* Sources */,
+				410000000000000100000001 /* Frameworks (BioCardAppTests) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F10000000000000100000001 /* PBXTargetDependency */,
+			);
+			name = BioCardAppTests;
+			productName = BioCardAppTests;
+			productReference = 310000000000000100000001 /* BioCardAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		620000000000000100000001 /* BioCardAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720000000000000100000001 /* Build configuration list for PBXNativeTarget "BioCardAppUITests" */;
+			buildPhases = (
+				820000000000000100000001 /* Sources */,
+				420000000000000100000001 /* Frameworks (BioCardAppUITests) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F20000000000000100000001 /* PBXTargetDependency */,
+			);
+			name = BioCardAppUITests;
+			productName = BioCardAppUITests;
+			productReference = 320000000000000100000001 /* BioCardAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,6 +288,14 @@
 				TargetAttributes = {
 					600000000000000100000001 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					610000000000000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 600000000000000100000001;
+					};
+					620000000000000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 600000000000000100000001;
 					};
 				};
 			};
@@ -193,9 +313,22 @@
 			projectRoot = "";
 			targets = (
 				600000000000000100000001 /* BioCard */,
+				610000000000000100000001 /* BioCardAppTests */,
+				620000000000000100000001 /* BioCardAppUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900000000000000200000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000F00000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		800000000000000100000001 /* Sources */ = {
@@ -219,9 +352,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		810000000000000100000001 /* Sources (BioCardAppTests) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110000000000000100000001 /* BioCardAppTests.swift in Sources */,
+				110000000000000200000001 /* BioCardCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820000000000000100000001 /* Sources (BioCardAppUITests) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120000000000000100000001 /* BioCardAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F10000000000000100000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 600000000000000100000001 /* BioCard */;
+			targetProxy = D10000000000000100000001 /* PBXContainerItemProxy */;
+		};
+		F20000000000000100000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 600000000000000100000001 /* BioCard */;
+			targetProxy = D10000000000000200000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		/* Project-level configurations */
 		B00000000000000100000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -268,18 +432,24 @@
 			};
 			name = Release;
 		};
+		/* BioCard App configurations */
 		C00000000000000100000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = BioCard;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Mrityunjay Kumar. All rights reserved.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
@@ -287,6 +457,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
@@ -297,14 +469,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = BioCard;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Mrityunjay Kumar. All rights reserved.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
@@ -312,9 +489,83 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		/* BioCardAppTests configurations */
+		C10000000000000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biocard.inspector.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioCard";
+			};
+			name = Debug;
+		};
+		C10000000000000200000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biocard.inspector.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioCard";
+			};
+			name = Release;
+		};
+		/* BioCardAppUITests configurations */
+		C20000000000000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biocard.inspector.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TEST_TARGET_NAME = BioCard;
+			};
+			name = Debug;
+		};
+		C20000000000000200000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biocard.inspector.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TEST_TARGET_NAME = BioCard;
 			};
 			name = Release;
 		};
@@ -326,6 +577,24 @@
 			buildConfigurations = (
 				C00000000000000100000001 /* Debug */,
 				C00000000000000200000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710000000000000100000001 /* Build configuration list for PBXNativeTarget "BioCardAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10000000000000100000001 /* Debug */,
+				C10000000000000200000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720000000000000100000001 /* Build configuration list for PBXNativeTarget "BioCardAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20000000000000100000001 /* Debug */,
+				C20000000000000200000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

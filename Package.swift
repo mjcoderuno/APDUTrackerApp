@@ -8,8 +8,6 @@ let package = Package(
         .iOS(.v16)
     ],
     products: [
-        .library(name: "BioCardCore", targets: ["BioCardCore"]),
-        .library(name: "BioCardUI", targets: ["BioCardUI"]),
         .executable(name: "BioCardApp", targets: ["BioCardApp"]),
         .executable(name: "BioCardCLI", targets: ["BioCardCLI"])
     ],

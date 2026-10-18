@@ -4,7 +4,4 @@
    <FileRef
       location = "group:BioCard.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Package.swift">
-   </FileRef>
 </Workspace>

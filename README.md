@@ -1,10 +1,10 @@
 # APDU Trace Inspector
 
-A native Apple platform diagnostic tool designed to capture, inspect, and export low-level APDU communication traces between biometric smart cards (Match-on-Card, FIDO2/WebAuthn tokens, EMV bio cards) and Apple devices (**macOS**, **iOS**, **iPadOS**).
+A native Apple platform diagnostic tool designed to capture, inspect, and export low-level APDU communication traces Apple devices (**macOS**, **iOS**, **iPadOS**). 
 
 ---
 
-## Opening in Xcode
+## Opening in Xcode 26.2
 
 You can now open the project directly in Xcode using either the Xcode Project or Workspace file:
 

@@ -11,12 +11,12 @@ You can now open the project directly in Xcode using either the Xcode Project or
 ### Option A: Open `APDUTracker.xcodeproj`
 Double-click `APDUTracker.xcodeproj` in Finder, or run from Terminal:
 ```bash
-open /Users/mrityunjaykumar/Documents/POC/APDUTracker/APDUTracker.xcodeproj
+open {project_path}/APDUTracker.xcodeproj
 ```
 
 ### Option B: Open `APDUTracker.xcworkspace`
 ```bash
-open /Users/mrityunjaykumar/Documents/POC/APDUTracker/APDUTracker.xcworkspace
+open {project_path}/APDUTracker.xcworkspace
 ```
 
 Once opened in Xcode:
@@ -33,13 +33,13 @@ Once opened in Xcode:
 
 ### 1. Launch with One Click
 ```bash
-/Users/mrityunjaykumar/Documents/POC/APDUTracker/run_app.sh
+{project_path}/run_app.sh
 ```
 Or double-click `APDUTracker.app` directly in Finder.
 
 ### 2. Run Automated Tests
 ```bash
-cd /Users/mrityunjaykumar/Documents/POC/APDUTracker
+cd {project_path}
 swift test
 ```
 

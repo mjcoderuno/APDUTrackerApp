@@ -204,7 +204,7 @@ public final class TraceStore: ObservableObject {
         if let folder = folder {
             targetDirectory = folder
         } else {
-            let pocDir = URL(fileURLWithPath: "/Users/mrityunjaykumar/Documents/POC/APDUTracker")
+            let pocDir = URL(fileURLWithPath: "")
             if FileManager.default.fileExists(atPath: pocDir.path) {
                 targetDirectory = pocDir
             } else {

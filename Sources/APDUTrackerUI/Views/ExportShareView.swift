@@ -99,7 +99,7 @@ public struct ExportShareView: View {
     
     #if os(macOS)
     private func saveToAPDUTrackerFolder() {
-        let dir = URL(fileURLWithPath: "/Users/mrityunjaykumar/Documents/POC/APDUTracker")
+        let dir = URL(fileURLWithPath: "")
         let filename = "APDUTracker_Trace_\(timestampString()).txt"
         let url = dir.appendingPathComponent(filename)
         saveToFile(url: url)

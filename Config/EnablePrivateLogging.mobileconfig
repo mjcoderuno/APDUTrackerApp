@@ -8,9 +8,9 @@
             <key>PayloadDescription</key>
             <string>Enables raw hex payloads in Unified Logging for SmartCard and Biometric daemons.</string>
             <key>PayloadDisplayName</key>
-            <string>BioCard APDU Unmasked Logging</string>
+            <string>APDUTracker APDU Unmasked Logging</string>
             <key>PayloadIdentifier</key>
-            <string>com.biocard.logging.private</string>
+            <string>com.apdutracker.logging.private</string>
             <key>PayloadType</key>
             <string>com.apple.system.logging</string>
             <key>PayloadUUID</key>
@@ -51,9 +51,9 @@
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>BioCard Private Logging Profile</string>
+    <string>APDUTracker Private Logging Profile</string>
     <key>PayloadIdentifier</key>
-    <string>com.biocard.profile</string>
+    <string>com.apdutracker.profile</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
     <key>PayloadType</key>

@@ -5,18 +5,18 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$DIR"
 
 echo "======================================================="
-echo " Launching BioCard APDU Inspector GUI App"
+echo " Launching APDUTracker APDU Inspector GUI App"
 echo "======================================================="
 
 # Recompile if binary is older than sources
-if [ ! -d "BioCard.app" ]; then
-    echo "Building BioCard.app..."
-    swift build -c release --product BioCardApp
-    mkdir -p BioCard.app/Contents/MacOS BioCard.app/Contents/Resources
-    cp .build/release/BioCardApp BioCard.app/Contents/MacOS/BioCardApp
-    codesign --force --deep --sign - BioCard.app
+if [ ! -d "APDUTracker.app" ]; then
+    echo "Building APDUTracker.app..."
+    swift build -c release --product APDUTrackerApp
+    mkdir -p APDUTracker.app/Contents/MacOS APDUTracker.app/Contents/Resources
+    cp .build/release/APDUTrackerApp APDUTracker.app/Contents/MacOS/APDUTrackerApp
+    codesign --force --deep --sign - APDUTracker.app
 fi
 
-echo "Opening BioCard.app..."
-open "$DIR/BioCard.app"
+echo "Opening APDUTracker.app..."
+open "$DIR/APDUTracker.app"
 echo "App launched successfully!"
